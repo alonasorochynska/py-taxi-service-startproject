@@ -25,8 +25,8 @@ class Car(models.Model):
 
 
 class Driver(AbstractUser):
-    licence_number = models.CharField(max_length=255,
+    license_number = models.CharField(max_length=255,
                                       unique=True)
 
     class Meta:
-        ordering = ('licence_number',)
+        ordering = ('license_number',)
